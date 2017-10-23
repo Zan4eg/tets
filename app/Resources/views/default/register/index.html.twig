@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(form) }}
+        {{ form_errors(form) }}
+
+        {% if flow.getCurrentStepNumber() == 1 %}
+            <div>
+                {{ form_widget(form) }}
+            </div>
+        {% endif %}
+
+        {{ form_rest(form) }}
+
+    {{ form_end(form) }}
+{% endblock %}

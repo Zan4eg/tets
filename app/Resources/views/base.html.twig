@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Lorem ipsum</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block head %}{% endblock %}
+    </head>
+    <style>
+    div {
+        margin: 5px 0px 5px 5px;
+    }
+    label {
+        margin-right: 20px;
+    }
+    </style>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

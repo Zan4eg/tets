@@ -1,0 +1,10 @@
+Имя: {{ user.firstname}} <br />
+Фамилия: {{ user.lastname}} <br />
+Отчество: {{ user.middlename}} <br />
+Дата рождения: {{ user.birthdate|date('Y-m-d')}} <br />
+Пол: {{ user.sex}} <br />
+Город: {{ user.city}} <br />
+
+{% for image in images %}
+    <img width="350px" src="/{{ image }}" />
+{% endfor %}

@@ -1,0 +1,5 @@
+{% extends 'SonataAdminBundle:CRUD:base_edit.html.twig'  %}
+{% block form %}
+    <img src="/{{ object.getImage() }}" />
+    {{ parent() }}
+{% endblock %}
